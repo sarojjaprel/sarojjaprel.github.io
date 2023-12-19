@@ -3,44 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Dynamic Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-        #counter {
-            font-size: 2em;
-            color: #007BFF;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Website</title>
 </head>
 <body>
+    <header>
+        <h1>Your Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#education">Educational</a></li>
+                <li><a href="#social">Social Media</a></li>
+                <li><a href="#entertainment">Entertainment</a></li>
+                <li><a href="#blogging">Blogging Platform</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1></h1>
+    <main>
+        <section id="blogs">
+            <h2>Blogs</h2>
+            <!-- Add content for the Blogs section -->
+        </section>
 
-    <p>On the Way , You will be notifed soon .</p>
+        <section id="education">
+            <h2>Educational</h2>
+            <!-- Add content for the Educational section -->
+        </section>
 
-    <p>Page loaded <span id="counter">0</span> times.</p>
+        <section id="social">
+            <h2>Social Media Integration</h2>
+            <!-- Add content for the Social Media section -->
+        </section>
 
-    <script>
-        // Increment the counter on each page load
-        document.addEventListener('DOMContentLoaded', function () {
-            // Get the counter element
-            var counterElement = document.getElementById('counter');
-            
-            // Retrieve the current count from local storage
-            var count = localStorage.getItem('pageLoadCount') || 0;
+        <section id="entertainment">
+            <h2>Entertainment</h2>
+            <!-- Add content for the Entertainment section -->
+        </section>
 
-            // Update the counter element and local storage
-            counterElement.textContent = count;
-            localStorage.setItem('pageLoadCount', ++count);
-        });
-    </script>
+        <section id="blogging">
+            <h2>Blogging Platform</h2>
+            <!-- Add content for the Blogging Platform section -->
+        </section>
+    </main>
 
+    <footer>
+        <section id="feedback">
+            <h2>Feedback and Comments</h2>
+            <!-- Add a form for feedback and comments -->
+        </section>
+    </footer>
 </body>
 </html>
