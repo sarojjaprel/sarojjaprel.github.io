@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Dynamic Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        #counter {
+            font-size: 2em;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Your Dynamic Website!</h1>
+
+    <p>This is a simple example of a dynamic webpage hosted on GitHub Pages.</p>
+
+    <p>Page loaded <span id="counter">0</span> times.</p>
+
+    <script>
+        // Increment the counter on each page load
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the counter element
+            var counterElement = document.getElementById('counter');
+            
+            // Retrieve the current count from local storage
+            var count = localStorage.getItem('pageLoadCount') || 0;
+
+            // Update the counter element and local storage
+            counterElement.textContent = count;
+            localStorage.setItem('pageLoadCount', ++count);
+        });
+    </script>
+
+</body>
+</html>
