@@ -18,15 +18,23 @@
     height: 70px;
 }
 
-.logo{
-    color: #ff7200;
-    font-size: 35px;
-    font-family: Arial;
-    padding-left: 20px;
-    float: left;
-    padding-top: 10px;
-    margin-top: 5px
-}
+.a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Style for the linked text logo */
+  .logo-link {
+    font-size: 24px; /* Set the font size of the text */
+    font-weight: bold; /* Set the font weight for emphasis */
+    color: #333; /* Set the text color */
+    padding: 10px 20px; /* Add padding around the linked text */
+    background-color: #f0f0f0; /* Add a background color */
+    border: 2px solid #333; /* Add a border */
+    border-radius: 8px; /* Add some border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
 
 .menu{
     width: 400px;
